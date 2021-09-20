@@ -8,5 +8,5 @@ int main()
     int a, b;
     cin >> a >> b;
     cout << (a + b + (a - b) * ((2 * (a-b) + 1) % 2)) / 2;
-    return 0;
+    return EXIT_SUCCESS;
 }

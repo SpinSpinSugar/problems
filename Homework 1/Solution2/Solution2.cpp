@@ -8,5 +8,5 @@ int main()
     int N, K;
     cin >> N >> K;
     cout << N / K;
-    return 0;
+    return EXIT_SUCCESS;
 }

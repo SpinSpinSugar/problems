@@ -7,9 +7,9 @@ int main()
     setlocale(LC_ALL, "Russian");
     int a, b, c;
     cin >> a >> b;
-    c = a;
-    a = b;
-    b = c;
+    a = a + b;
+    b = a - b;
+    a = a - b;
     cout << a << " " << b;
-    return 0;
+    return EXIT_SUCCESS;
 }

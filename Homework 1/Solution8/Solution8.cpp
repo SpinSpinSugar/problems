@@ -8,5 +8,5 @@ int main()
     int a, b, c, a1, b1, c1;
     cin >> a >> b >> c >> a1 >> b1 >> c1;
     cout << 3600 * a1 + 60 * b1 + c1 - 3600 * a - 60 * b - c;
-    return 0;
+    return EXIT_SUCCESS;
 }

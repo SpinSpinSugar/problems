@@ -9,5 +9,5 @@ int main()
     cin >> N;
     y = N * N;
     cout << y * (y + N + 1) + N + 1;
-    return 0;
+    return EXIT_SUCCESS;
 }
