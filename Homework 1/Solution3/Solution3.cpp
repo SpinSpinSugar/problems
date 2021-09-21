@@ -7,6 +7,6 @@ int main()
     setlocale(LC_ALL, "Russian");
     int N, K;
     cin >> N >> K;
-    cout << N - (N / K) * K;
+    cout << K % N;
     return EXIT_SUCCESS;
 }
