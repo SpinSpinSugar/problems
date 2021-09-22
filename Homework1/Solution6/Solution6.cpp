@@ -7,6 +7,6 @@ int main()
     setlocale(LC_ALL, "Russian");
     int N;
     cin >> N;
-    cout << (N / 2) * 2 + 2 * ((((2 * N + 1) % 2) + 1) / 2 + ((N + 1) % 2) * (((2 * N + 1) % 2) - 1) / 2); // костылим без if :-)
+    cout << N - (N * (2 * N + 1)) % 2 + 2;
     return EXIT_SUCCESS;
 }
