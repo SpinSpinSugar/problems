@@ -9,20 +9,20 @@ int main(int argc, char* argv[])
 	int k;
 	int m;
 	int n;
+	int t;
 	cin >> k >> m >> n;
-	if ((n % k) != 0)
+	n = 2 * n;
+	t = (n / k) * m;
+	if (n <= k)
 	{
-		if ((n % k) <= (k / 2))
-		{
-			cout << (2 * (n - k + 1) / k + 1) * m;
-		}
-		else
-		{
-			cout << (n / k) * m * 2 + m * 2;
-		}
+		cout << 2 * m;
 	}
 	else
 	{
-		cout << (n / k) * m * 2;
+		if (n % k != 0)
+		{
+			t += m;
+		}
+		cout << t;
 	}
 }

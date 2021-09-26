@@ -1,11 +1,9 @@
 ﻿#include<iostream>
-#include<locale.h>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	setlocale(LC_ALL, "Russian");
 	int a;
 	int b;
 	int c;
@@ -15,11 +13,11 @@ int main(int argc, char* argv[])
 	{
 		cout << "INF";
 	}
-	if (((-b % a) == 0) && (b / a != d / c))
+	else if (a != 0)
 	{
-		if (-d % c != 0)
+		if (((b % a) == 0) && ((b * c) != (d * a)))
 		{
-			cout << -b / a;
+			cout << (-1) * b / a;
 		}
 		else
 		{
