@@ -7,7 +7,11 @@ int main()
 		setlocale(LC_ALL, "Russian");
 		int n;
 		cin >> n;
-		if (n / 100 != 0)
+		if (n == 0)
+		{
+			cout << "ноль ";
+		}
+		else if (n / 100 != 0)
 		{
 			switch (n / 100)
 			{
