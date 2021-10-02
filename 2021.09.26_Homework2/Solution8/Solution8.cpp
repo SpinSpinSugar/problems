@@ -6,13 +6,29 @@ using namespace std;
 int main(int argc, char* argv[])
 {
 	setlocale(LC_ALL, "Russian");
-	int a;
-	int b;
-	int c;
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int temp = 0;
 	cin >> a >> b >> c;
-	if (a < b) swap(a, b);
-	if (a < c) swap(a, c);
-	if (b < c) swap(b, c);
+	if (a < b)
+	{
+		temp = a;
+		a = b;
+		b = temp;
+	}
+	if (a < c)
+	{
+		temp = a;
+		a = c;
+		c = temp;
+	}
+	if (b < c)
+	{
+		temp = b;
+		b = c;
+		c = temp;
+	}
 
 	// a>=b>=c
 	if ((a < b + c) && (c > a - b))

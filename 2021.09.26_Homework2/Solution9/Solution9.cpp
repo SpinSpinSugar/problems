@@ -6,10 +6,10 @@ using namespace std;
 int main(int argc, char* argv[])
 {
 	setlocale(LC_ALL, "Russian");
-	int M;
-	int N;
-	int x;
-	int y;
+	int M = 0;
+	int N = 0;
+	int x = 0;
+	int y = 0;
 	cin >> M >> N >> x >> y;
 	if (x + 1 <= M)
 	{

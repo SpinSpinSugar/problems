@@ -6,10 +6,10 @@ using namespace std;
 int main(int argc, char* argv[])
 {
 	setlocale(LC_ALL, "Russian");
-	int k;
-	int m;
-	int n;
-	int t;
+	int k = 0;
+	int m = 0;
+	int n = 0;
+	int t = 0;
 	cin >> k >> m >> n;
 	n = 2 * n;
 	t = (n / k) * m;
@@ -25,4 +25,5 @@ int main(int argc, char* argv[])
 		}
 		cout << t;
 	}
+	return EXIT_SUCCESS;
 }
