@@ -8,8 +8,10 @@ int main(int argc, char* argv[])
 	int k = 0;
 	int i = 0;
 	int b = 0;
-	double result = 1;
-	double j = 1;
+	double result = 0;
+	double j = 0;
+	result = 1;
+	j = 1;
 	cin >> n >> k;
 	if (n == 0 || n == 1)
 	{
