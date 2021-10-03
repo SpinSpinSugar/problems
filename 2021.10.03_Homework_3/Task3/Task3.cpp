@@ -26,4 +26,5 @@ int main(int argc, char* argv[])
 		counter_2 = 0;
 		cout << endl;
 	}
+	return EXIT_SUCCESS;
 }
