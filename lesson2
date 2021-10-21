@@ -1,0 +1,137 @@
+недоделанный сдвиг массива
+#include <iostream>
+#include<ctime>
+
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+	srand(time(0));
+	const int n = 10;
+	int a[n]{ 0 };
+	for (int i = 0; i < n; i++)
+	{
+		a[i] = rand() % 90 + 10;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		cout << a[i] << " ";
+	}
+	cout << endl;
+	int temp = 0;
+	int last_element = a[n-1];
+	for (int i = 0; i < n-2; i++)
+	{
+		temp = a[i + 1];
+		a[i+1] = a[i];
+	}
+	a[0] = last_element;
+	cout << endl;
+	for (int i = 0; i < n; i++)
+	{
+		cout << a[i] << " ";
+	}
+	return EXIT_SUCCESS;
+}
+
+
+сумма массива
+#include <iostream>
+#include<ctime>
+
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+	srand(time(0));
+	const int n = 10;
+	int a[n]{ 0 };
+	for (int i = 0; i < n; i++)
+	{
+		a[i] = rand() % 90 + 10;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		cout << a[i] << " ";
+	}
+	cout << endl;
+	int sum = 0;
+	for (int i = 0; i < n; i++)
+	{
+		sum += a[i];
+	}
+	cout << sum;
+	return EXIT_SUCCESS;
+}
+
+
+второй максимальный элемент
+#include <iostream>
+#include<ctime>
+
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+	srand(time(0));
+	const int n = 10;
+	int a[n]{ 0 };
+	for (int i = 0; i < n; i++)
+	{
+		a[i] = rand() % 90 + 10;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		cout << a[i] << " ";
+	}
+	cout << endl;
+	int max = a[0];
+	for (int i = 0; i < n; i++)
+	{
+		if (max <= a[i])
+		{
+			max = a[i];
+		}
+	}
+	int max_2 = -1;
+	for (int i = 0; i < n; i++)
+	{
+		if ((max_2 <= a[i]) && (a[i] != max))
+		{
+			max_2 = a[i];
+		}
+	}
+	cout << max_2;
+	return EXIT_SUCCESS;
+}
+
+
+
+поиск минимального элемента в массиве
+#include <iostream>
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+	const int n = 10;
+	int a[n]{ 0 };
+	for (int i = 0; i < n; i++)
+	{
+		a[i] = rand() % 90 + 10;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		cout << a[i] << " ";
+	}
+	cout << endl;
+	int min = a[0];
+	for (int i = 0; i < n; i++)
+	{
+		if (min >= a[i])
+		{
+			min = a[i];
+		}
+	}
+	cout << min;
+	return EXIT_SUCCESS;
+}
