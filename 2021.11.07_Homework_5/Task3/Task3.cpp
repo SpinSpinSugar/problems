@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
         cout << a;
     }
     else
-    {
+    { // if a<0, then |a| = ~a + 1
         a = ~a;
         int c = 0;
         int final_sum = 0;
