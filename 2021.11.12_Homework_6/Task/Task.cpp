@@ -11,7 +11,6 @@ int main(int argc, char* argv[])
 	int size = 0;
 	int capacity_1 = 0;
 	int capacity_2 = 0;
-	int temp = 0;
 	string y = "";
 	while (true)
 	{
@@ -96,13 +95,12 @@ int main(int argc, char* argv[])
 			break;
 		case 3: //add an element at the beginning
 			system("cls");
-			cout << "¬ведите число:" << endl;
-			cin >> temp;
 			for (int i = 0; i < size; ++i) //filling temporary array with old elements with shift i -> i+1
 			{
 				temp_array_2[i + 1] = array[i];
 			}
-			temp_array_2[0] = temp;
+			cout << "¬ведите число:" << endl;
+			cin >> temp_array_2[0];
 			array = temp_array_2;
 			size += 1;
 			system("cls");
